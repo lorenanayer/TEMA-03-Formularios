@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="shortcut icon" href="./aseets/lionel-messi.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./aseets/index.css">
+
+</head>
+<body>
+    <div class="titulo"> <h1>Formulario de contacto</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, modi minus ipsa eaque nemo explicabo aspernatur facilis accusamus est iure voluptates consequuntur illum itaque quam, cupiditate eligendi atque? Libero, incidunt! ipsum dolor sit amet consectetur adipisicing elit. Ut eius, quas quaerat asperiores magnam nostrum, officiis repellendus corporis ea deserunt sint dolor eum vero, laboriosam est quo eos vitae a.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse laborum dolores qui eaque alias eum. Consequuntur dolores dolore unde in porro non impedit minima expedita, ex omnis nemo earum.</p>
+    </div>
+    
+    <form action="./jss/index.js" method="get">
+
+        <label for="nombre"> Nombre</label ><!-- datos de nombre -->
+        <input type="text" id="nombre" required placeholder="pepe perez"><!-- muestra placerholder ejemplo al cliente -->
+        <br>
+        <label for="email"> Email: </label><!-- datos de email -->
+        <input type="email" id="Email" required><!-- required hace q sin ese deato nose envie el forulario -->
+        <br>
+        <label for="edad"> edad</label><!-- datos de edad en label va el dato se repite en imput va le tipo de dato -->
+        <input type="number" id="edad" required>
+        <br>
+        <label for="pais">pais nacimiento </label>
+        <select name="pais nacimiento " id="pais"></select><!--  SELECT para elegir entre opciones -->
+        <br>
+
+        <select name="id"> <!-- abrimos selec primero luego otgroup con etiqueta de cierre y dentro van las option -->
+            <optgroup><!--  OPTGROUP abajo de SELECT -->
+            <option value="">Caba</option>
+            <option value="">Provincia</option>
+            
+            </optgroup>
+            
+        </select>
+        <br>
+        <button type="submit">enviar datos</button>
+        <button type="reset"> Borrar Datos</button>
+    </form>
+</body>
+
+</html>
